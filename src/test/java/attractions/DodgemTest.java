@@ -36,7 +36,12 @@ public class DodgemTest {
     }
 
     @Test
-    public void normalTicketPriceForOver12s(){
+    public void hasDefaultPrice(){
+        assertEquals(4.50, dodgems.defaultPrice(), 0.0);
+    }
+
+    @Test
+    public void defaultTicketPriceForOver12s(){
         assertEquals(4.50, dodgems.priceFor(visitor2), 0.0);
     }
     @Test
